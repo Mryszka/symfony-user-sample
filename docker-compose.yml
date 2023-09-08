@@ -17,7 +17,7 @@ services:
             context: './.docker/php/'
         volumes:
             - ./.docker/php/000-default.conf:/etc/apache2/sites-available/000-default.conf
-            - ./api/:/var/www/html/
+            - ./:/var/www/html/
         environment:
             - VIRTUAL_HOST=project.loc
 
